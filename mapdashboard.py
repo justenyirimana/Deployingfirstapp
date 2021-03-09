@@ -82,6 +82,9 @@ external_stylesheets = [dbc.themes.DARKLY]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = 'Loan Monitoring Dashboard'
+
+server = app.server
+
 auth = dash_auth.BasicAuth(app, USERNAME_PASSWORD)
 
 ########Page Header
