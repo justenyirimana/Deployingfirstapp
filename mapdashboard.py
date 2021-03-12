@@ -17,9 +17,9 @@ import dash_auth
 USERNAME_PASSWORD = [['dsdivision', 'womensday123#']]
 ##########Get Data
 # reading in the shapefile
-fp = r"Districts\District.shp"
+# fp = r"Districts\District.shp"
 
-map_df = gp.read_file(fp)
+map_df = gp.read_file('District.shp')
 
 amount_df = pd.read_csv("loans_amount.csv")#, header=0, encoding='cp1252')
 
